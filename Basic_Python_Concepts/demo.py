@@ -8,7 +8,7 @@ firstname = input("Enter firstname: ")
 lastname = input("Enter lastname: ")
 
 username = firstname+lastname
-print(username)
+print("Username is: "+username)
 
 email = username+"@gmail.com"
-print(email)
+print("Email is: "+email)
