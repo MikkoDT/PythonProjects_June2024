@@ -11,4 +11,5 @@ years = float(input("Enter the period in years: "))
 rate = float(input("Enter rate of interest: "))
 
 interest = principal * years * rate / 100
-print("interest = "+ str(interest))
+"""F String"""
+print("Simple interest on the principal amount "+str(principal)+". For a period of "+str(years)+" years at the rate of "+str(rate)+" % is $ "+str(interest)+".")
