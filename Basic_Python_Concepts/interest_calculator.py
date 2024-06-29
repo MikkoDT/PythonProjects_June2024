@@ -6,9 +6,9 @@ R = rate
 
 """
 
-principal = int(input("Enter the amount borrowed: "))
-years = int(input("Enter the period in years: "))
-rate = int(input("Enter rate of interest: "))
+principal = float(input("Enter the amount borrowed: "))
+years = float(input("Enter the period in years: "))
+rate = float(input("Enter rate of interest: "))
 
 interest = principal * years * rate / 100
 print("interest = ", interest)
