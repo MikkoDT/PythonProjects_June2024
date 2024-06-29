@@ -11,4 +11,4 @@ years = int(input("Enter the period in years: "))
 rate = int(input("Enter rate of interest: "))
 
 interest = principal * years * rate / 100
-print("interest = "+interest)
+print("interest = ", interest)
