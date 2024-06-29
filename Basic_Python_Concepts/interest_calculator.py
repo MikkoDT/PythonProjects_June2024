@@ -12,4 +12,5 @@ rate = float(input("Enter rate of interest: "))
 
 interest = principal * years * rate / 100
 """F String"""
-print("Simple interest on the principal amount "+str(principal)+". For a period of "+str(years)+" years at the rate of "+str(rate)+" % is $ "+str(interest)+".")
+print("Simple interest on the principal amount $"+str(principal)+". For a period of "+str(years)+" years at the rate of "+str(rate)+"% is $ "+str(interest)+".")
+print(f"Simple interest on the principal amount ${principal}. For a period of {years} years at the rate of {rate}% is ${interest}.")
