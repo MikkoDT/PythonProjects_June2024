@@ -3,5 +3,6 @@ people = dict(
     Rob=40,
     Tim=20
 )
-people["mike"] = 30
+people["Mike"] = 30
+del people["Tim"]
 print(people)
