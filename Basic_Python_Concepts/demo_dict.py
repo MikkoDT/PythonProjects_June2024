@@ -3,5 +3,5 @@ people = dict(
     Rob=40,
     Tim=20
 )
-
+people["mike"] = 30
 print(people)
