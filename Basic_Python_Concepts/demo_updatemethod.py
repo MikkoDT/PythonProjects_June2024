@@ -3,3 +3,7 @@ new_prices = {'iphone':600,'imac':1500}
 
 prices.update(new_prices)
 print(prices)
+
+a = prices.pop('ipad')
+print(prices)
+print(a)
