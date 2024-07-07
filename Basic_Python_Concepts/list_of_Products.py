@@ -15,8 +15,18 @@ while True:
         for index,product in enumerate(products):
             print(f"{index}: {product['name']} : {product['description']} : {product['price']}")
         product_id = int(input("Enter the ID of the product you want to add to the cart: "))
-        cart.append(products[product_id])
-        print(f"Current cart contents are {cart}")
+
+        #check if product is already present in the cart
+        if products[product_id] in cart:
+            products[product_id]['quantity']+=1
+        else:
+            products[product_id]['quantity']=1
+            cart.append(products[product_id])
+
+        print(f"Current cart contents are ")
+        for product in cart:
+            print(f"{product['name']} : {product['price']} : QTY:{product['quantity']}")
+            total = total
     else:
         break
 
