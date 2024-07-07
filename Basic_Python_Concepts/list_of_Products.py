@@ -32,4 +32,4 @@ while True:
     else:
         break
 
-print(f"Thank you, your final cart contents are {cart}")
+print(f"Thank you, your final cart contents are: {cart}")
