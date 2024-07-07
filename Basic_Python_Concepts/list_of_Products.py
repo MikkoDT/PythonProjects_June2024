@@ -13,6 +13,11 @@ while True:
     if choice == "yes":
         print('Here is a list of products and their prices')
         for index,product in enumerate(products):
-            print(f"{product['name']} : {product['description']} : {product['price']}")
-        product_id = int(input("Enter the ID of the product you want to add to the cart."))
-        cart.append()
+            print(f"{index}: {product['name']} : {product['description']} : {product['price']}")
+        product_id = int(input("Enter the ID of the product you want to add to the cart: "))
+        cart.append(products[product_id])
+        print(f"Current cart contents are {cart}")
+    else:
+        break
+
+print(f"Thank you, your final cart contents are {cart}")
