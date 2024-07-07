@@ -1,4 +1,3 @@
-for x in range(5):
+for x in range(1,11):
     print(x)
-    print('Hello')
-    print('Hi')
+    
