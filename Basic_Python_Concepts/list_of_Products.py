@@ -12,5 +12,7 @@ while True:
 
     if choice == "yes":
         print('Here is a list of products and their prices')
-        for product in products:
-            print(product['name'])
+        for index,product in enumerate(products):
+            print(f"{product['name']} : {product['description']} : {product['price']}")
+        product_id = int(input("Enter the ID of the product you want to add to the cart."))
+        cart.append()
