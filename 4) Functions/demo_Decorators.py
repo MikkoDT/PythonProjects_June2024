@@ -7,3 +7,6 @@ def decorator(func):
         func()
         print("Wrapper down side")
     return wrapper
+
+chocolate = decorator(chocolate)
+chocolate()
