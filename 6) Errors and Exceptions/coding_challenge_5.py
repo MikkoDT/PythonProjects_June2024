@@ -1,16 +1,14 @@
 def divide(x,y):
-    result = x / y
     try:
-        result = x / y
+        return x / y
     except ZeroDivisionError:
         print('Cannot divide a number by zero.')
     finally:
         print('This code will be executed no matter what.')
 
-    return result
+    #return print('Cannot divide a number by zero.')
 
-
-print("result = ",divide(5,0))
+print("result = ",divide(0,0))
 
 
 
