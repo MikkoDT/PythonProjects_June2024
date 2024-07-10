@@ -1,4 +1,4 @@
-def function()
+def function():
     print('Hello')
 
 function()
