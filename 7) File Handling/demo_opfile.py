@@ -1,3 +1,5 @@
 file = open('data.txt','r')
-content = file.read()
+#content = file.read()
+#content = file.read(10)
+content = file.readline()
 print(content)
