@@ -1,4 +1,8 @@
 with open('data.txt','r') as file:
-    line1 = file.readline()
+    #line1 = file.readline()
+    #line2 =file.readline()
+    lines = file.readlines()
 
-print(line1)
+print(lines)
+for line in lines:
+    print(line)
