@@ -1,1 +1,3 @@
-New content to be added to file
+This is the first line.
+This is the second line.
+This is a third line.
