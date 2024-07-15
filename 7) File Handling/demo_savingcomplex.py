@@ -11,4 +11,4 @@ def read_user_data():
     with open("user_data.txt","r") as file:
         print(file.read())
 
-read_user_data()
+save_user_data()
