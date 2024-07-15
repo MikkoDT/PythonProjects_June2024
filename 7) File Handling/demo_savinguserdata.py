@@ -6,4 +6,8 @@ while True:
         if choice == 'n':
             break
 
+with open("names.txt","r") as file:
+    lines = file.readlines()
 
+for line in lines:
+    print(line.strip().capitalize())
