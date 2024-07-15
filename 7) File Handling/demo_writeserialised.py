@@ -15,6 +15,7 @@ def save_user_data():
             "email":email,
             "contact":contact
         }
+
         user_list.append(user_data)
 
         with open("user_data.json","w") as file:
