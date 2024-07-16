@@ -36,6 +36,12 @@ def read_user_data():
 
     with open("user_data.json","r") as file:
         user_list = json.load(file)
-        for
+        for user_data in user_list:
+            print("Name: ", user_data["name"])
+            print("Email: ", user_data["email"])
+            print("Contact: ", user_data["contact"])
+            print("\n")
+
+#Create Read Update Delete
 
 save_user_data()
