@@ -5,3 +5,10 @@ for number in numbers:
         odd_nums.append(number)
 
 print(odd_nums)
+
+def odd(x):
+    if x%2==1:
+        return x
+
+odd_numbers = list(filter(odd,numbers))
+print(odd_numbers)
