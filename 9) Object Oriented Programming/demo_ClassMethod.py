@@ -7,6 +7,7 @@ class Student:
         self.name = name
 
     # instance method
+    def hello(self):
         print(f"Hello my name is {self.name}.")
 
     # instance method
