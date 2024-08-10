@@ -20,13 +20,21 @@ class School:
             print("....................")
 
 #Creating school object
-
-#Accepting data from the user to create a student object
 school = School()
-name = input("Enter name of the student: ")
-age = input("Enter age: ")
-roll_number = input("Enter roll number: ")
 
-#Creating a student object and adding it to the school
-school.add_student(name,age,roll_number)
-school.display_students()
+while True:
+    choice = input("enter your choice: \n1)Add student \n2)Display list of students \n5)Quit \nChoice: ")
+    if choice == "1":
+        # Accepting data from the user to create a student object
+        name = input("Enter name of the student: ")
+        age = input("Enter age: ")
+        roll_number = input("Enter roll number: ")
+
+        # Creating a student object and adding it to the school
+        school.add_student(name, age, roll_number)
+
+    elif choice=="2":
+        school.display_students()
+    elif choice=="5":
+        break
+
