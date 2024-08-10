@@ -1,9 +1,9 @@
 import re
 
-string = "bc"
+string = "abbbaaabbbbc"
 pattern = "ab*c"
 
-if re.search(pattern, string):
+if re.match(pattern, string):
     print('Match found.')
 else:
     print('No match found.')
