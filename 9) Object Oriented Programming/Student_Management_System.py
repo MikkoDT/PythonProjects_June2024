@@ -27,11 +27,18 @@ class School:
                 print(f"Student {student.name} successfully updated.")
                 return
 
+    def delete_student(self,roll_number):
+        for student in self.students:
+            if student.roll_number == roll_number:
+                self.students.remove(student)
+                print(f"Student {student.name} deleted successfully. ")
+                return
+
 #Creating school object
 school = School()
 
 while True:
-    choice = input("enter your choice: \n1)Add student \n2)Display list of students \n3)Edit student data \n5)Quit \nChoice: ")
+    choice = input("enter your choice: \n1)Add student \n2)Display list of students \n3)Edit student data \n4)Delete student \n5)Quit \nChoice: ")
     if choice == "1":
         # Accepting data from the user to create a student object
         name = input("Enter name of the student: ")
@@ -49,6 +56,10 @@ while True:
         new_name = input("Enter new name for the student: ")
         new_age = input("Enter new age for the student: ")
         school.edit_student(roll_number,new_name,new_age)
+
+    elif choice=="4":
+        roll_number = input("Enter roll number you want to delete: ")
+        school.delete_student(roll_number)
 
     elif choice=="5":
         break
