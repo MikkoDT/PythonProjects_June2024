@@ -7,7 +7,7 @@ def add():
     n1 = int(number1.get())
     n2 = int(number2.get())
     result = str(n1 + n2)
-    answer.config(text="Anser is: "+ result)
+    answer.config(text="Answer is: "+ result)
 
 number1  = Entry()
 number2  = Entry()
