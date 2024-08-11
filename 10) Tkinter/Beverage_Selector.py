@@ -21,7 +21,7 @@ def selected():
     else:
         cream = "No cream, "
 
-    label.config(text="Options selected are: " + sugar + ice + cream)
+    label.config(text="Options selected are: " + "\n" + sugar + "\n" + ice + "\n" + cream)
 
 root = Tk()
 root.geometry("300x300")
