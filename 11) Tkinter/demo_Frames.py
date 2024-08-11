@@ -1,13 +1,14 @@
 from tkinter import *
 
 root = Tk()
-frame = Frame(root)
-frame.pack()
+
+frame1 = Frame(root,highlightthickness=5,highlightbackground="Red",padx="20",pady="20")
+frame1.pack()
 
 frame2 = Frame(root)
-frame2.pack()
+frame2.pack(side=BOTTOM)
 
-button = Button(frame,text="Button1")
+button = Button(frame1,text="Button1")
 button2 = Button(frame2,text="Button2")
 
 button.pack()
