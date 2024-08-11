@@ -3,7 +3,7 @@ from tkinter import *
 root = Tk()
 root.geometry("300x300")
 
-fuel = StringVar(value="Petrol")
+fuel = StringVar(value="Diesel")
 
 radio1 = Radiobutton(root,text="Petrol",variable=fuel,value="Petrol")
 radio2 = Radiobutton(root,text="Diesel",variable=fuel,value="Diesel")
